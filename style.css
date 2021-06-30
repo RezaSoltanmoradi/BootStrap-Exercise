@@ -1,0 +1,94 @@
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: rgb(34, 163, 34);
+  list-style: none;
+  list-style-type: none;
+  text-decoration: none;
+  transition: 0.5s;
+}
+.dropdown {
+  color: white;
+  font-family: serif;
+  font-size: 18px;
+}
+
+#nav-item {
+  color: white;
+  font-family: serif;
+  font-size: 18px;
+}
+
+#nav-item:hover {
+  background-color: rgb(13, 146, 13);
+  border-radius: 5px;
+}
+@media screen and (max-width: 1200px) {
+  .navbar-nav {
+    width: 50%;
+    background-color: rgb(14, 167, 14);
+    float: right;
+    z-index: 110;
+  }
+  nav {
+    height: 50px;
+  }
+  .navbar-collapse {
+    z-index: 110;
+  }
+}
+.dropdown:hover > .dropdown-menu {
+  display: block;
+}
+
+.dropdown > .dropdown-toggle:active {
+  /*Without this, clicking will make it sticky*/
+  pointer-events: none;
+}
+
+.dropdown > .nav-items:hover {
+  background-color: rgb(13, 146, 13);
+  border-radius: 5px;
+}
+.dropdown-item:hover {
+  background-color: black;
+}
+.animation {
+  width: 600px;
+  z-index: 100;
+}
+h2 {
+  position: relative;
+  text-shadow: rgb(126, 128, 0) 5px 5px 5px;
+  animation-name: example;
+  animation-duration: 4s;
+}
+@keyframes example {
+  0% {
+    left: -100%;
+  }
+  25% {
+    left: 0%;
+    right: 0px;
+    text-align: center;
+  }
+  75% {
+    left: 0%;
+    right: 0px;
+    text-align: center;
+  }
+  100% {
+    left: 0%;
+    right: 0px;
+    text-align: center;
+  }
+}
+.navbar * {
+  color: white;
+}
+.navbar > .nav-item:hover {
+  color: green;
+}
